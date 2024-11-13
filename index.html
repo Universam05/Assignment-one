@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <title>Area of Triangle</title>
+</head>
+<style>
+    main{
+        background: linear-gradient(to right, #002e31, #4d0000);
+        /* background-color: rgb(0, 0, 0); */
+        color: #fff;
+        box-shadow: 2px 2px 3px;
+        
+    }
+
+    #answer{
+        display: flex;
+        margin: auto;
+        color: rgb(255, 217, 0);
+        margin-top: 30px;
+    }
+
+    .btn{
+        background-color: rgb(160, 0, 8);
+        border: 1px solid tomato;
+        border-radius: 20px;
+    }
+</style>
+<body>
+
+    <main class="w-50 bg-color-primary p-2 mt-5 mx-auto shadow align-content-center">
+        <h1>Find the triangle Area </h1>
+        <input type="number" class="form-control mt-3 " id="base"   placeholder="Enter the base ">
+        <input type="number"  class="form-control mt-4 " id="height"   placeholder="Enter the height" >
+        <button class="btn btn-success mt-3 " onclick="myFunction()">Calculate</button>
+        <div class="mt 5 p-4 d-flex  w-25 h-25" id="answer"></div>
+
+    </main>
+    
+</body>
+</html>
+
+
+<script>
+    function myFunction() {
+        let baseValue = document.getElementById("base").value;
+        let heightValue = document.getElementById("height").value;
+        let solution = document.getElementById("answer").innerHTML = (1/2 * baseValue * heightValue)
+        console.log(solution);    
+    }
+
+
+</script>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="show"></h1>
+<h2 id="shows"></h2>
+
+<p id="all"></p>
+
+<div id="demo"></div>
+
+<!-- <button onclick="myFunction()">Try it</button> -->
+
+
+
+<button onclick="myFunction()">Change it</button>
+
+<div id="replace">"i hate javascript with passion and i hate it so much that i am going to give up"</div>
+
+<p id="demos">Hello World!</p>
+    
+</body>
+</html>
+
+
+<script>
+
+    // let newClass = "i am in javascript class"
+    //  console.log(newClass);
+
+
+    //  let newClasses = "i am in node class"
+    // alert(newClasses)
+
+    // let newClasse = "i am in Css class"
+    // document.getElementById("shows").innerHTML = newClasse
+
+
+
+
+    // Data type{strings}
+
+    // let string = "Anything you write in this 'quote' is a string"
+    // console.log(string);
+    // document.getElementById('show').innerHTML = string
+    
+    // let strings= 'Can also be a "string" quote'
+    // console.log(strings);
+
+
+    // let stringes= 'Can also be a "single" quote'
+    // document.getElementById('show').innerHTML = stringes
+    
+
+
+
+//  Numbers
+
+let num = 0
+let isPresent =true;
+let islate = false;
+let obj={}
+let arr = []
+let undef = undefined;
+let nuu = null;
+
+
+// Read on string method and the use of the three strings method
+
+
+let myString = "    String methods   "
+console.log(myString.indexOf("n"))
+console.log(myString.lastIndexOf("t"))
+console.log(myString.includes("ode"))
+console.log(myString.startsWith("str"))
+console.log(myString.endsWith("odes"))
+console.log(myString.length, "length of the string")
+console.log(myString.trim().length, "After i trimmed it")
+
+
+// let padd = "Timtom is good"
+
+// console.log(padd.padStart(18, "Hey "));
+
+// console.log(padd.split());
+// console.log(padd.substring(3,7));
+
+// replace all
+
+let replay = "i hate javascript with passion and i hate it so much that i am going to give up"
+console.log(replay);
+replay = replay.replaceAll("hate","love");
+replay = replay.replaceAll("i am going to give up","i am not going to give up");
+document.getElementById("all").innerHTML = replay
+
+
+// function myFunction() {
+//   let text = document.getElementById("replace").innerHTML;
+//   document.getElementById("replace").innerHTML =
+//   text.replace("hate","love");
+// }
+function myFunction() {
+  let text = document.getElementById("replace").innerHTML;
+  document.getElementById("replace").innerHTML =
+  text.replace('i hate javascript with passion and i hate it so much that i am going to give up',"i love javascript with passion and i love it so much that i am not going to give up");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+const str = 'lets target a character'
+document.getElementById("demo").innerHTML = str.charAt(9);
+console.log(str);
+alert(str)
+
+
+
+
+
+
+
+// function myFunction() {
+//   let text = document.getElementById("demos").innerHTML;
+//   document.getElementById("demos").innerHTML =
+//   text.toUpperCase();
+// }
+
+
+
+
+
+     
+    
+     
+</script>

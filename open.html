@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="w-25 shadow rounded p-3 mx-auto">
+        <h1>Guess a number from 0-9</h1>
+        <input id="guessdNumber" class="form-control my-3 py-3" type="text">
+        <button class="btn btn-primary" onclick="guessNumber()">Guess</button>
+        <div id="get"></div>
+
+    </main>
+</body>
+</html>
+
+
+<script>
+ 
+ let get = document.getElementById("get")
+
+ function guessNumber(){
+let randomNumber = Math.floor(Math.random() * 10)
+console.log(randomNumber);
+console.log(guessedNumber.value);
+if(guessedNumber.value ==randomNumber)
+
+{get.innerHTML = '<h2 class= "text-success"> Congratulation, You guessed right</h2>'
+
+alert("Congratulations! You guessed the correct number: " + randomNumber);
+}
+
+
+else{
+    get.innerHTML =  '<h2 class= "text-danger"> You guessed wrongly, try again</h2>'
+   '<h1> The computer guessd ${randomNumber} </h1>'
+
+
+
+   alert("Sorry, that's incorrect. The correct number was: " + randomNumber);
+
+
+
+}
+ }
+
+
+    // let yName = "my name is Universam"
+
+    // console.log(MyName);
+    // alert(MyName)
+    // document.getElementById("name").innerHTML = MyName
+
+
+
+
+    // Generate a random number between 0 and 9
+const randomNumber = Math.floor(Math.random() * 10);
+
+// Prompt the user to guess the number
+const userGuess = prompt("Guess a number between 0 and 9:");
+
+// Check if the user's guess matches the random number
+if (parseInt(userGuess) === randomNumber) {
+    alert("Congratulations! You guessed the correct number: " + randomNumber);
+} else {
+    alert("Sorry, that's incorrect. The correct number was: " + randomNumber);
+}
+
+
+    
+</script>

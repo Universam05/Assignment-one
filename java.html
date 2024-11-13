@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripted</title>
+    <style>
+        .tyre{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <div id="tyre" class="tyre"></div>
+            <button onclick="move()">Move</button>
+            <button onclick="stop()">Stop</button>
+
+    </main>
+</body>
+</html>
+
+<script>
+    let tyreRef = document.getElementById("tyre")
+    function move(){
+        tyreRef.innerHTML="This tyre is rolling"
+    }
+    function stop(){
+        tyreRef.innerHTML="This tyre stopped rolling"
+    }
+</script>
